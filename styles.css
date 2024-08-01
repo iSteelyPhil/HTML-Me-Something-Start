@@ -1,7 +1,6 @@
 CSS
 /* Write your CSS here! */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .poppins-regular {
   font-family: "Poppins", sans-serif;
@@ -20,34 +19,32 @@ header {
   justify-content: space-between;
   padding-left: 50px;
   padding-top: 10px;
-  font-family: ;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(247, 244, 244);
 
-   background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0,0,0,0));
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 0px solid rgba(255, 255, 255, 0.1);
-  box-shadow:0 8px 32px 0 rgba(0,0,0,0) ;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
 
- /*  position: fixed; */
+  /*  position: fixed; */
 }
-.containerGlass{
- 
-}
+
 .headLinks {
   display: flex;
 }
 .headLinks a {
   padding-right: 40px;
   color: white;
-  
+
   font-size: 25px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
 }
 .headLinks a:hover {
-  z-index: 0;
+  /* z-index: 0; */
   text-shadow: 20px 0 100px #ffe600, -40px 0 100px #fffb00;
 }
 .videoText a {
@@ -60,7 +57,7 @@ header {
 }
 
 .videoText a:hover {
-  z-index: 0;
+  /*  z-index: 0; */
   text-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff;
 }
 
@@ -86,50 +83,64 @@ header {
   max-height: 120vh;
   object-fit: cover;
 }
+.imgBG {
+  position: absolute;
+  z-index: -1;
+  top: 1;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 120vh;
+  object-fit: cover;
+}
 
-main h1{
+#mainHeading {
   text-align: center;
   padding-bottom: 50px;
+  color: red;
 }
-article{
+article {
   display: flex;
   align-items: center;
 }
-article img{
-  max-width: 400px; 
-  margin-right: 100px; 
+article img {
+  max-width: 400px;
+  margin-right: 100px;
   padding-left: 50px;
   padding-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
-
 }
 
-.articleText{
-flex: 1;
-margin-top: 50px;
-margin-left: 50px;
-margin-bottom: 50px;
-font-family:Arial, Helvetica, sans-serif;
-font-size: 25px;
+.articleText {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
 }
-
-.lineContainer{
+.funParagraph {
+  color: green;
+}
+.lineContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
 }
 
-.aboutMe{
+.aboutMe {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   column-gap: 1.6rem;
 }
-.aboutMe::before, .aboutMe::after{
-  content:"";
+.aboutMe::before,
+.aboutMe::after {
+  content: "";
   height: 2px;
   background-color: black;
   display: block;
