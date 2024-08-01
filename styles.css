@@ -115,6 +115,26 @@ font-family:Arial, Helvetica, sans-serif;
 font-size: 25px;
 }
 
+.lineContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.aboutMe{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 1.6rem;
+}
+.aboutMe::before, .aboutMe::after{
+  content:"";
+  height: 2px;
+  background-color: black;
+  display: block;
+}
+
 @media only screen and (max-width: 400px) {
   .vidBG {
     width: 100%;
